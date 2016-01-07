@@ -1,0 +1,62 @@
+{
+    "extName": {
+        "message": "Punycode Alert",
+        "description": "The name of the extension."
+    },
+    "extDescription": {
+        "message": "Punycode Alert is a Google Chrome, Chromium, Opera extension that warns users when the URL they are accessing has some punycode content.",
+        "description": "The description of the extension."
+    },
+    "extAuthor": {
+        "message": "i3visio (Yaiza Rubio and Félix Brezo)",
+        "description": "The authors of the extension."
+    },
+    "extAboutText": {
+        "message": "We are a team of Open Sources analysts focused on making life easier for other intelligence analysts. The brand we use is <a href=\"http://i3visio.com\">i3visio</a>. If you are curious, you can find more info about us and other projects in which we are involved here:",
+        "description": "The HTML code to be shown in the about page (without the social links)."
+    },
+    "footerLicensed": {
+        "message": "This extension is licensed under <a href='http://www.gnu.org/licenses/gpl-3.0.txt'>GPLv3+</a>.",
+        "description": "The HTML code to be shown in the license disclaimer in the footer."
+    },
+    "footerCode": {
+        "message": "Code",
+        "description": "The text to be shown when linking to the code in the footer."
+    },
+    "footerIssues": {
+        "message": "Issues",
+        "description": "The text to be shown when linking to the issues Github page in the footer."
+    },
+    "footerDoc": {
+        "message": "Documentation",
+        "description": "The text be shown when linking to the documentation in the footer."
+    },
+    "badgeTitle": {
+        "message": "Punycode Alert",
+        "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
+    },
+    "qWhatIsPunycode": {
+        "message": "What is Punycode?",
+        "description": "First question of the FAQ."
+    },
+    "rWhatIsPunycode": {
+        "message": "Punycode is a way of representing Unicode characters using only the limited character subset of ASCII supported by the Domain Name System.",
+        "description": "First answer of the FAQ."
+    },
+    "qExample": {
+        "message": "Can you give an example?",
+        "description": "Second question of the FAQ."
+    },
+    "rExample": {
+        "message": "Punycode is a way of representing Unicode characters using only the limited character subset of ASCII supported by the Domain Name System. Think about the following examples: <code>españa.com</code> is translated into <code>xn--espaa-rta.com</code>. <br><br>Users may find useful to get advised when these URL addresses provided to them contain some characters may look the same but may be encoding letters from different alphabets. Think about: <code>hack.com</code> and <code>haсk.com</code>. The first one is linking to the URL you now, while the second one contains a <code>с</code> from the Cyrilic alphabet. The real domain is coded as <code>xn--hak-5ed.com</code>.",
+        "description": "Second answer of the FAQ."
+    },
+    "qWhyIsThisAnIssue": {
+        "message": "Why is this an issue?",
+        "description": "Third question of the FAQ."
+    },
+    "rWhyIsThisAnIssue": {
+        "message": "The point is that browsers clean the URL shown in the address bar if the characters match with the current language. To deal with this exists this extension.",
+        "description": "Third answer of the FAQ."
+    }
+}
