@@ -1,0 +1,41 @@
+.menu ul{
+	min-width:100px;
+	max-width:300%;
+}
+
+.menu ul.right{
+	left:auto;
+	right:0;
+}
+
+.menu li a{
+	font-size:0.9em;
+	padding:15px 20px;
+}
+
+.menu li.brand a{
+	font-size:1em;
+}
+
+.menu li.left{
+	text-align: left;
+}
+
+.menu li.right{
+	text-align: right;
+}
+
+.menu ul{
+	min-width:100px;
+	max-width:300%;
+}
+
+/*td.center { text-align: center; }*/
+td { 
+	text-align: center;
+}
+
+/*tr.center { text-align: center; }*/
+th { 
+	text-align: center;
+}
