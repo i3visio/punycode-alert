@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "Punycode Alert es una extensión para Google Chrome, Chromium y Opera que avisa a los usuarios cuando acceden a direcciones con sintaxis Punycode.",
+        "message": "Punycode Alert es una extensión para Chrome y derivados que avisa cuando se accede a direcciones con sintaxis Punycode.",
         "description": "The description of the extension."
     },
     "extAuthor": {
@@ -54,5 +54,9 @@
     "rWhyIsThisAnIssue": {
         "message": "La cuestión es que las navegadores limpian las URL mostradas en la barra de direcciones si los caracteres codificados pertenecen al idioma del usuario. Es ahí donde aparecen extensiones como esta.",
         "description": "Third answer of the FAQ."
+    },
+    "alertWarning": {
+        "message": "BE CAREFUL! Is this URL the one you want to go?\n\nIt has some punycode content:\n",
+        "description": "The text to be shown in the warning."
     }
 }

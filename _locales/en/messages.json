@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "Punycode Alert is a Google Chrome, Chromium, Opera extension that warns users when the URL they are accessing has some punycode content.",
+        "message": "Punycode Alert is a Chrome extension that warns its users when they visit URL addresses with Punycode content.",
         "description": "The description of the extension."
     },
     "extAuthor": {
@@ -54,5 +54,9 @@
     "rWhyIsThisAnIssue": {
         "message": "The point is that browsers clean the URL shown in the address bar if the characters match with the current language. To deal with this exists this extension.",
         "description": "Third answer of the FAQ."
+    },
+    "alertWarning": {
+        "message": "BE CAREFUL! Is this URL where you want to go?\n\nIt has some Punycode content, so surf carefully:\n",
+        "description": "The text to be shown in the warning."
     }
 }

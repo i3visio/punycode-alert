@@ -32,9 +32,9 @@ chrome.extension.onRequest.addListener(function(request, sender) {
 
         // Si matchea con la objetivo... 
         if (currentURL.indexOf(punycodeStr) > -1) {
-            alert("BE CAREFUL! Is this URL the one you want to go?\n\nIt has some punycode content:\n" + currentURL);
+            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
             // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Wait"});
+            chrome.browserAction.setBadgeText({"text": "Puny"});
         }
     });
 });
@@ -50,9 +50,9 @@ chrome.tabs.onSelectionChanged.addListener(function(tabId, props) {
 
         // Si matchea con la objetivo... 
         if (currentURL.indexOf(punycodeStr) > -1) {
-            alert("BE CAREFUL! Is this URL the one you want to go?\n\nIt has some punycode content:\n" + currentURL);
+            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
             // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Wait"});
+            chrome.browserAction.setBadgeText({"text": "Puny"});
         }
     });
 });
