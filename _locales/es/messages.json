@@ -4,7 +4,7 @@
         "description": "The name of the extension."
     },
     "extDescription": {
-        "message": "Punycode Alert es una extensión para Google Chrome, Chromium y Opera que avisa a los usuarios de que están accediendo a direcciones URL con sintaxis Punycode.",
+        "message": "Punycode Alert es una extensión para Google Chrome, Chromium y Opera que avisa a los usuarios cuando acceden a direcciones con sintaxis Punycode.",
         "description": "The description of the extension."
     },
     "extAuthor": {
@@ -26,10 +26,6 @@
     "footerIssues": {
         "message": "Problemas",
         "description": "El texto que figurará en el link a la página de Github de Issues en el pie."
-    },
-    "footerDoc": {
-        "message": "Documentación",
-        "description": "The text be shown when linking to the documentation in the footer."
     },
     "badgeTitle": {
         "message": "Punycode Alert",

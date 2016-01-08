@@ -27,10 +27,6 @@
         "message": "Issues",
         "description": "The text to be shown when linking to the issues Github page in the footer."
     },
-    "footerDoc": {
-        "message": "Documentation",
-        "description": "The text be shown when linking to the documentation in the footer."
-    },
     "badgeTitle": {
         "message": "Punycode Alert",
         "description": "The name of the extension as it will be shown in the badge appearing in the toolbar."
