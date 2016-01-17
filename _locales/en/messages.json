@@ -56,7 +56,31 @@
         "description": "Third answer of the FAQ."
     },
     "alertWarning": {
-        "message": "BE CAREFUL! Is this URL where you want to go?\n\nIt has some Punycode content, so surf carefully:\n",
+        "message": "BE CAREFUL! Is this URL where you want to go?\n\nIt has some Punycode content, so surf carefully:\n\n",
         "description": "The text to be shown in the warning."
+    },
+    "tabConfiguration": {
+        "message": "Configuration",
+        "description": "Configuration tab text."
+    },
+    "labAlert": {
+        "message": "Show alerts in a dialog",
+        "description": "The label for whether to show or not an alert."
+    },
+    "labBadge": {
+        "message": "The text to be shown in the badge:",
+        "description": "The label to define what level ."
+    },
+    "plaBadge": {
+        "message": "!!!",
+        "description": "Text to be shown in the badge."
+    },
+    "butSave": {
+        "message": "Save configuration",
+        "description": "Text to be shown in the button."
+    },
+    "aleConfigurationSaved": {
+        "message": "New configuration saved",
+        "description": "Text to be shown in the alert of the saved configuration."
     }
 }

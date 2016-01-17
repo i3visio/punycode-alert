@@ -22,20 +22,34 @@
 
 */
 
+function doSomething(currentUrl) {
+    // Variable
+    var punycodeStr = "xn--";
+
+    // Setting the text...
+    chrome.browserAction.setBadgeText({"text": ""});
+
+    // Grabbing the configuration if possible
+    chrome.storage.sync.get("config", function (storage) {
+        // Si matchea con la objetivo... 
+        if (currentUrl.indexOf(punycodeStr) > -1) {
+            if (storage["config"]["cheAlert"]) {
+                //alert(chrome.i18n.getMessage("alertWarning") + currentURL);
+                alert("BE CAREFUL! Is this URL where you want to go?\n\nIt has some Punycode content, so surf carefully:\n" + currentUrl);
+            }
+            // Mostrando el cambio en un texto
+            chrome.browserAction.setBadgeText({"text": storage["config"]["texBadgeText"]});
+        }
+    });
+}
+
+
 // To change when the request is performed
 chrome.extension.onRequest.addListener(function(request, sender) {
     chrome.tabs.query({active: true}, function(tabArray) {
-        chrome.browserAction.setBadgeText({"text": ""});
-        var punycodeStr = "xn--";
-        // Cogemos la URL de la pestaña activa
+        // Selecting the active tab...
         var currentURL = tabArray[0].url;
-
-        // Si matchea con la objetivo... 
-        if (currentURL.indexOf(punycodeStr) > -1) {
-            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
-            // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Puny"});
-        }
+        doSomething(currentURL);
     });
 });
 
@@ -43,17 +57,8 @@ chrome.extension.onRequest.addListener(function(request, sender) {
 chrome.tabs.onSelectionChanged.addListener(function(tabId, props) {
 
     chrome.tabs.query({active: true}, function(tabArray) {
-        chrome.browserAction.setBadgeText({"text": ""});
-        var punycodeStr = "xn--";
-        // Cogemos la URL de la pestaña activa
+        // Selecting the active tab...
         var currentURL = tabArray[0].url;
-
-        // Si matchea con la objetivo... 
-        if (currentURL.indexOf(punycodeStr) > -1) {
-            alert(chrome.i18n.getMessage("alertWarning") + currentURL);
-            // Mostrando el cambio en un texto
-            chrome.browserAction.setBadgeText({"text": "Puny"});
-        }
+        doSomething(currentURL);
     });
 });
-

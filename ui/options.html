@@ -47,26 +47,33 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 
 <!-- ===================================== END HEADER ===================================== -->
 
-<!-- ===================================== START CONTENT ===================================== -->
+<!-- ===================================== START FOOTER ===================================== -->
 <div class="grid" style="width: 500px;">
-	<div class="col_12 center">
-		<div class="col_6">
-			<h5>__MSG_extName__</h5>
-			<img src="/img/logo.png" height="48px;" width="48px;"></i>
+	<div class="col_12">
+		<div id="optMessage"></div>
+		<ul class="tabs left">
+			<li><a href="#tabProfiles"><i class="fa fa-wrench"></i> __MSG_tabConfiguration__</a></li>
+		</ul>
+		<div id="tabProfiles" class="tab-content">
+			<center>
+
+				<input type="checkbox" id="cheAlert" /> <label for="checkAlert">__MSG_labAlert__</label>
+				<br>
+				<br>
+
+		        <!-- Placeholder Text -->
+		        <label for="texBadgeText">__MSG_labBadge__<br></label>
+		        <input id="texBadgeText" type="text" placeholder="__MSG_plaBadge__" width="400px"/>
+		        <br>
+		        <br>
+
+				<button class="orange small" id="butSave"><span class="tooltip-bottom" title="__MSG_butSave__"><i class="fa fa-save"></i> __MSG_butSave__</span></button>
+
+			</center>
 		</div>
-		<div class="col_6">
-			__MSG_extAboutText__
-			<br>
-			<br>
-			<a href="http://www.i3visio.com"><i class="fa fa-sitemap"></i></a> |
-			<a href="mailto:contacto@i3visio.com"><i class="fa fa-envelope"></i></a> |
-			<a href="http://twitter.com/i3visio"><i class="fa fa-twitter"></i></a> |
-			<a href="http://i3visio.tumblr.com"><i class="fa fa-tumblr"></i></a> |
-			<a href="http://github.com/i3visio"><i class="fa fa-github"></i></a>
-		</div>
+
 	</div>
 </div>
-
 <!-- ===================================== END CONTENT ===================================== -->
 
 <!-- =================================== START FOOTER ====================================== -->
@@ -81,12 +88,22 @@ Copyright (C) F. Brezo and Y. Rubio (i3visio) 2016
 
 		<div class="project">
 			Copyright (C)  <a href="https://i3visio.com">i3visio</a>, 2016:
-			<a href="https://github.com/i3visio/punycode-alert">__MSG_footerCode__</a> &middot;
-			<a href="https://github.com/i3visio/punycode-alert/issues">__MSG_footerIssues__</a>
+			<a href="https://github.com/i3visio/web-surfer-assistant">__MSG_footerCode__</a> &middot;
+			<a href="https://github.com/i3visio/web-surfer-assistant/issues">__MSG_footerIssues__</a>
 		</div>
 	</small>
 	<br>
 </div>
+
+<!-- =================================== END FOOTER ====================================== -->
+
+<!-- =================================== SCRIPTS ====================================== -->
+
+<!-- Loading input/output functions -->
+<script src="/js/background.js"></script>
+
+<!-- Loading the options functions -->
+<script src="/js/options.js"></script>
 
 <!-- Script needed to translate the given interface onto a different language. This MUST be the latest thing in the document. -->
 <script src="/js/localize.js"></script>

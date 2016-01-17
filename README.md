@@ -12,7 +12,7 @@
 
 Description:
 ============
-Punycode Alert is a Google Chrome, Chromium, Opera extension that warns users when the URL 
+Punycode Alert is a Google Chrome, Chromium, Opera extension that warns users when the URL
 they are accessing has some Punycode content.
 
 License: GPLv3+
@@ -43,4 +43,5 @@ Installation:
 =============
 Load it from the Chrome Store or drag and drop the .crx file onto the browser
 under the chrome://extensions. That should install it in Google Chrome, Chromium and
-Opera.
+Opera. You can install it from: 
+<https://chrome.google.com/webstore/detail/punycode-alert/djghjigfghekidjibckjmhbhhjeomlda>

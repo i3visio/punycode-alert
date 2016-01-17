@@ -1,0 +1,11 @@
+For more information, check the README.md in <http://github.com/i3visio/osrframework>. For the ToDo list and the known issues, scroll down till the end of this file.
+
+0.2.0, 2016/01/8 -- Fixed issues #1 and #2.
+- Creating an options window.
+- The user now can select whether he wants to show the alert when a URL is suspicious.
+- The text to be shown can be chosen by the user (only 4 first leters).
+
+0.1.1, 2016/01/8 -- Translated the alert message box..
+- Translated the alert message box.
+
+0.1.0, 2016/01/8 -- Initial release.
