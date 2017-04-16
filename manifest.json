@@ -3,7 +3,7 @@
     "name": "__MSG_extName__",
     "description": "__MSG_extDescription__",
     "author" : "__MSG_extAuthor__",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "default_locale": "en",
     "content_scripts": [
         {
@@ -33,7 +33,8 @@
     },
     "permissions": [
         "tabs",
-        "storage"
+        "storage",
+        "notifications"
     ],
     "manifest_version": 2
 }

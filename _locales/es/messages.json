@@ -64,7 +64,7 @@
         "description": "Configuration tab text."
     },
     "labAlert": {
-        "message": "Mostrar alertas en un diálogo",
+        "message": "Mostrar alertas como una notificación",
         "description": "The label for whether to show or not an alert."
     },
     "labBadge": {
@@ -82,5 +82,13 @@
     "aleConfigurationSaved": {
         "message": "Nueva configuración salvada",
         "description": "Text to be shown in the alert of the saved configuration."
+    },
+    "aleNotificationTitle": {
+        "message": "¡Cuidado! ¿Es aquí a dónde quieres ir?",
+        "description": "Título de la notificación"
+    },
+    "aleNotificationBody": {
+        "message": "La URL a la que realmente accedes es: ",
+        "description": "Cuerpo de la notificación"
     }
 }

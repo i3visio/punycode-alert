@@ -1,5 +1,10 @@
 For more information, check the README.md in <http://github.com/i3visio/osrframework>. For the ToDo list and the known issues, scroll down till the end of this file.
 
+0.3.0, 2017/04/6 -- Messages are shown on a Notification.
+- Added notifications as a preferred way of advising.
+- Minor traslation fixes.
+- Badge color moved to red.
+
 0.2.0, 2016/01/8 -- Fixed issues #1 and #2.
 - Creating an options window.
 - The user now can select whether he wants to show the alert when a URL is suspicious.
