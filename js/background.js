@@ -22,6 +22,36 @@
 
 */
 
+
+
+// Grabbing the configuration if possible
+chrome.storage.sync.get("config", function (storage) {
+    var dictConfig = {};
+
+    dictConfig = storage["config"];
+    var textConfig = JSON.stringify(dictConfig, null, 4);
+
+    // Initializing!
+    if (typeof(dictConfig) == "undefined") {
+        // No information was stored so... We'll load the default configuration manually:
+        // Get a value saved in a form.
+
+        var dictConfig = {};
+
+        dictConfig["texBadgeText"] = "Puny";
+        dictConfig["cheAlert"] = true;
+
+        var textConfig = JSON.stringify(dictConfig, null, 4);
+        //console.log("options.js: " + textConfig);
+
+        // Save it using the Chrome extension storage API.
+        chrome.storage.sync.set({'config': dictConfig}, function() {
+            // Notify that we saved.
+            //console.log("Default settings saved.");
+       });
+    }
+});
+
 /**
     Two parameters received:
         - currentUrl as provided by the browser
@@ -67,9 +97,9 @@ chrome.extension.onRequest.addListener(function(request, sender) {
     });
 });
 
+
 //To change when the selection changes...
 chrome.tabs.onSelectionChanged.addListener(function(tabId, props) {
-
     chrome.tabs.query({active: true}, function(tabArray) {
         // Selecting the active tab...
         var currentURL = tabArray[0].url;
